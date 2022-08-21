@@ -1,0 +1,20 @@
+﻿<Window x:Class="ConfusedFN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConfusedFN"
+        mc:Ignorable="d"
+        Title="Fortnite Launcher" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="321*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="PassTextBox" TextWrapping="Wrap" Text="Password" Width="120" RenderTransformOrigin="2.151,0.514" Grid.Column="1" Margin="220,43,302,287"/>
+        <TextBox x:Name="PathTextBox" TextWrapping="Wrap" Width="120" Grid.Column="1" Margin="367,43,155,310"/>
+        <TextBox x:Name="MailTextBox" TextWrapping="Wrap" Width="120" Grid.Column="1" Margin="63,43,459,296" Text="Email"/>
+        <Button x:Name="LaunchBtn" Content="Launch" Margin="0,385,0,0" Click="LaunchBtn_Click"/>
+
+    </Grid>
+</Window>
